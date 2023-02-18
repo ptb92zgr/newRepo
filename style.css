@@ -26,8 +26,8 @@ header {
 
 main {
   width: 100%;
-  height: 500px;
   display: flex;
+  flex-direction: column;
 }
 
 .flex-item-1 {
@@ -50,28 +50,39 @@ main {
   flex-grow: 1;
 }
 
-.wrap {
+.box {
   width: 100%;
   height: 300px;
   display: flex;
 }
 
+.box:nth-of-type(3) {
+  flex-direction: column-reverse;
+}
+
 .card-1 {
   flex-grow: 1;
   background: white;
-  height: 200px;
 }
 
 .card-2 {
   flex-grow: 1;
   background: rgb(83, 22, 107);
-  height: 200px;
 }
 
 .card-3 {
   flex-grow: 1;
   background: rgb(71, 27, 27);
-  height: 200px;
+}
+
+.card-3 {
+  flex-grow: 1;
+  background: rgb(71, 27, 27);
+}
+
+.card-4 {
+  flex-grow: 1;
+  background: rgb(227, 201, 201);
 }
 
 footer {
